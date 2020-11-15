@@ -23,15 +23,17 @@
         "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error",
+        "class-methods-use-this": "off",
+        // "@typescript-eslint/camelcase": "off",  // deprecated
+        "camelcase": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
             {
                 "ts": "never"
             }
-        ],
-        "prettier/prettier": "error",
-        "class-methods-use-this": "off"
+        ]
     },
     "settings": {
         "import/resolver": {
