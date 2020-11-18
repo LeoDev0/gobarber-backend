@@ -27,6 +27,9 @@
         "class-methods-use-this": "off",
         // "@typescript-eslint/camelcase": "off",  // deprecated
         "camelcase": "off",
+        "@typescript-eslint/no-unused-vars": ["error", {
+            "argsIgnorePattern": "_"
+        }],
         "import/extensions": [
             "error",
             "ignorePackages",
