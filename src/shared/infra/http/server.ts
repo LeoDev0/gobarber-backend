@@ -9,6 +9,7 @@ import AppError from '@shared/errors/AppError';
 import routes from './routes';
 
 import '@shared/infra/typeorm';
+import '@shared/container';
 
 const app = express();
 
@@ -35,5 +36,5 @@ app.use(
 );
 
 app.listen(3333, () => {
-    console.log('Server is running!');
+    console.log('Server is running on port 3333!');
 });
